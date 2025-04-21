@@ -1,0 +1,76 @@
+The data consists of 25 years of historical data of football matches of the English Premier League. The range of the matches is an interval between 2000 and 2025.
+The data source is reliable and link is here: https://www.football-data.co.uk/englandm.php 
+
+
+                      MAIN VARIABLES 
+
+        Column		          Meaning
+	Div		Division (e.g., E0 = English Premier League)
+	Date		Match date
+	Time		Match kickoff time
+	HomeTeam	Name of the home team
+	AwayTeam	Name of the away team
+	FTHG		Full Time Home Goals (goals scored by home team)
+	FTAG		Full Time Away Goals (goals scored by away team)
+	FTR		Full Time Result (H = Home win, D = Draw, A = Away win)
+	HTHG		Half Time Home Goals
+	HTAG		Half Time Away Goals
+	HTR		Half Time Result (H, D, A)
+	Referee		Referee name
+	HS		Home Shots
+	AS		Away Shots
+	HST		Home Shots on Target
+	AST		Away Shots on Target
+	HF		Home Fouls committed
+	AF		Away Fouls committed
+	HC		Home Corners
+	AC		Away Corners
+	HY		Home Yellow Cards
+	AY		Away Yellow Cards
+	HR		Home Red Cards
+	AR		Away Red Cards
+
+
+
+
+                                                     Other Variables
+
+🔹 Match Odds – Full Time Result
+
+Column Prefix	Meaning
+B365	Bet365 odds: H (Home win), D (Draw), A (Away win)
+BW	Bet & Win
+BF	Betfair Exchange
+PS	Pinnacle Sports
+WH	William Hill
+1XB	1XBet
+Max	Maximum odds from all bookmakers
+Avg	Average odds from all bookmakers
+Example: B365H = Bet365 odds for Home Win; AvgD = Average odds for Draw.
+
+🔹 Over/Under 2.5 Goals Betting Odds
+
+Column Prefix	Meaning
+B365>2.5	Bet365 odds for over 2.5 goals
+B365<2.5	Bet365 odds for under 2.5 goals
+P>2.5, P<2.5	Pinnacle odds
+Max>2.5, Avg<2.5	Max/Avg odds across providers
+BFE>2.5	Betfair Exchange over/under 2.5 odds
+🔹 Asian Handicap Lines
+
+Column	Meaning
+AHh	Handicap line (e.g., -0.5, +1.0)
+B365AHH	Bet365 odds for home team with handicap
+B365AHA	Bet365 odds for away team with handicap
+MaxAHH, AvgAHA	Max/Avg odds for Asian handicap
+PAHH, PAHA	Pinnacle Asian Handicap odds
+BFEAHH, BFEAHA	Betfair Exchange Asian Handicap
+🔹 Match Odds – First Half
+Same naming pattern, with CH, CD, CA:
+
+B365CH: Bet365 odds for 1st half Home win
+
+AvgCA: Average odds for 1st half Away win
+
+BFECH, etc.
+
